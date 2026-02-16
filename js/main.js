@@ -26,7 +26,7 @@ async function fetchGames(category = '', platform = ''){
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': '91ac340ccemshddd07a51efeceaap19831bjsn2037bb431563',
+                'x-rapidapi-key': 'apikey',
                 'x-rapidapi-host': 'free-to-play-games-database.p.rapidapi.com'
             }};
 
