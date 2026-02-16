@@ -1,0 +1,119 @@
+/* Custom styles to enhance Bootstrap with dark pastel purple theme */
+body {
+    font-family: 'Arial', sans-serif !important;
+    background-color: #1a1a2e !important; /* Very dark background for overall page */
+    color: #e6e6fa !important; /* Light lavender text for contrast */
+}
+
+.hero {
+    background: linear-gradient(135deg, #4b0082 0%, #9370db 100%) !important; /* Dark pastel purple gradient */
+    min-height: 50vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ffffff !important; /* White text for visibility */
+}
+
+header.bg-dark {
+    background-color: #2e1a47 !important; /* Darker purple for header */
+    color: #ffffff !important;
+}
+
+footer.bg-dark {
+    background-color: #2e1a47 !important; /* Matching footer */
+    color: #ffffff !important;
+}
+
+.card {
+    background-color: #3a2d5a !important; /* Muted purple card background */
+    border: 1px solid #6a0dad !important; /* Subtle purple border */
+    color: #e6e6fa !important; /* Light text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 4px 8px rgba(106, 13, 173, 0.3) !important; /* Purple-tinted shadow */
+}
+
+.btn-primary {
+    background-color: #9370db !important; /* Medium purple button */
+    border-color: #9370db !important;
+}
+
+.btn-primary:hover {
+    background-color: #6a0dad !important; /* Darker on hover */
+    border-color: #6a0dad !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #e6e6fa !important; /* Light purple text for nav */
+}
+
+.nav-link:hover {
+    color: #ffffff !important; /* White on hover */
+}
+
+/* Additional overrides for Bootstrap elements */
+.navbar {
+    background-color: #2e1a47 !important;
+}
+
+.text-white {
+    color: #ffffff !important; /* Ensure white text where needed */
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* Animated loader with dark pastel purple theme */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    margin: 0 auto; /* Center the loader */
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    grid-area: 1/1;
+    --c: no-repeat radial-gradient(farthest-side, #9370db 92%, #0000); /* Changed to medium purple */
+    background:
+        var(--c) 50% 0,
+        var(--c) 50% 100%,
+        var(--c) 100% 50%,
+        var(--c) 0 50%;
+    background-size: 12px 12px;
+    animation: l12 1s infinite;
+}
+
+.loader::before {
+    margin: 4px;
+    filter: hue-rotate(0deg); /* Adjusted to keep it purple; original was 45deg for green */
+    background: no-repeat radial-gradient(farthest-side, #6a0dad 92%, #0000); /* Changed to deep purple for inner dots */
+    background-size: 8px 8px;
+    animation-timing-function: linear;
+}
+
+@keyframes l12 {
+    100% { transform: rotate(.5turn); }
+}
+
+/* Scrollable dropdown menu for categories */
+.dropdown-menu {
+    max-height: 300px !important; /* Limit height to make it scrollable */
+    overflow-y: auto !important; /* Add vertical scrollbar if needed */
+    background-color: #2e1a47 !important; /* Match header background */
+    border: 1px solid #6a0dad !important; /* Subtle border */
+}
+
+.dropdown-item {
+    color: #e6e6fa !important; /* Light text */
+}
+
+.dropdown-item:hover {
+    background-color: #3a2d5a !important; /* Muted purple on hover */
+    color: #ffffff !important; /* White text on hover */
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Game Reviews</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#all-games" id="home-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                                <li><a class="dropdown-item category-link" href="#" data-category="" id="all-games">All Games</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="mmorpg">MMORPG</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="shooter">Shooter</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="strategy">Strategy</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="action">Action</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="racing">Racing</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="sports">Sports</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="social">Social</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="sandbox">Sandbox</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="open-world">Open World</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="survival">Survival</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="pvp">PvP</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="pve">PvE</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="pixel">Pixel</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="voxel">Voxel</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="zombie">Zombie</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="turn-based">Turn-Based</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="first-person">First Person</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="third-Person">Third Person</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="top-down">Top-Down</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="tank">Tank</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="space">Space</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="sailing">Sailing</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="side-scroller">Side-Scroller</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="superhero">Superhero</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="permadeath">Permadeath</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="card">Card</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="battle-royale">Battle Royale</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="mmo">MMO</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="mmofps">MMOFPS</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="mmotps">MMOTPS</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="3d">3D</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="2d">2D</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="anime">Anime</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="fantasy">Fantasy</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="sci-fi">Sci-Fi</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="fighting">Fighting</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="action-rpg">Action RPG</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="action-game">Action Game</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="indie">Indie</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="adventure">Adventure</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="casual">Casual</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="simulation">Simulation</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="hack-and-slash">Hack and Slash</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="platform">Platform</a></li>
+                                <li><a class="dropdown-item category-link" href="#" data-category="moba">MOBA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to Game Reviews</h1>
+            <p>Discover the latest free-to-play game reviews and ratings.</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Game Reviews</h2>
+            <div id="games-container" class="row">
+                <!-- Games will be loaded here dynamically -->
+            </div>
+            <div id="loading" class="text-center">
+                <div class="loader"></div> <!-- Animated loader -->
+            </div>
+            <div id="error" class="text-center text-danger" style="display: none;">
+                <p>Failed to load games. Please check your API key or try again later.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 Game Reviews. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Game Details Modal -->
+    <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #3a2d5a; color: #e6e6fa; border: 1px solid #6a0dad;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameModalLabel">Game Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-loading" class="text-center">
+                        <div class="loader"></div> <!-- Reuse your loader -->
+                    </div>
+                    <div id="modal-error" class="text-center text-danger" style="display: none;">
+                        <p>Failed to load game details. Please try again later.</p>
+                    </div>
+                    <div id="modal-content" style="display: none;">
+                        <!-- Game details will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
