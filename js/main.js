@@ -1,4 +1,4 @@
-const apiKey = "91ac340ccemshddd07a51efeceaap19831bjsn2037bb431563";
+const apiKey = "YOUR_API_KEY";
 // const baseUrl = "https://www.freetogame.com/api";
 const loader = document.getElementById("loading");
 const gamesContainer = document.getElementById("games-container");
